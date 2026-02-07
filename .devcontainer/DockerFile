@@ -1,0 +1,11 @@
+FROM mcr.microsoft.com/devcontainers/python:2-3.14-trixie
+
+RUN python3 -m pip install poetry~=2.3.2
+
+WORKDIR /workspace/Ansible
+COPY poetry.lock pyproject.toml ./
+RUN chown -R vscode:vscode /workspace
+
+USER vscode
+RUN poetry install
+RUN VN=$(poetry env list | head -n 1 | cut -d ' ' -f 1) && ln -s ~/.cache/pypoetry/virtualenvs/$VN ~/venv

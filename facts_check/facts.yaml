@@ -1,0 +1,8 @@
+---
+- name: Display Python Version
+  hosts: localhost
+  gather_facts: true
+  tasks:
+    - name: Show Python version
+      ansible.builtin.debug:
+        msg: "Python version is {{ ansible_facts['python_version'] }}"

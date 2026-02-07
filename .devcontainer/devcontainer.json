@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "ansible-tuts",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// "image": "mcr.microsoft.com/devcontainers/python:2-3.14-trixie"
+	"build":{
+		"dockerfile": "DockerFile",
+		// Update the 'context' if your Dockerfile is not in the .devcontainer folder
+		"context": ".."
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"redhat.ansible",
+				"tamasfe.even-better-toml",
+				"redhat.vscode-yaml"
+			],
+			"settings": {
+				"python.defaultInterpreterPath": "/home/vscode/venv/bin/python3",
+				"ansible.python.interpreterPath": "/home/vscode/venv/bin/python3"
+			}
+		}
+	},
+	"postStartCommand": "/bin/bash -c 'echo \"source ~/venv/bin/activate\" >> ~/.bashrc'"
+}
