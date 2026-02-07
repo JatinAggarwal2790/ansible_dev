@@ -1,0 +1,16 @@
+---
+- name: Gather service Facts
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Gather service facts
+      ansible.builtin.service_facts:
+    - name: Display service facts
+      ansible.builtin.debug:
+        msg: "{{ ansible_facts.services }}"
+    - name: Display service (sudo)
+      ansible.builtin.debug:
+        msg: "{{ ansible_facts.services.sudo }}"
+    - name: Display service state (sudo)
+      ansible.builtin.debug:
+        msg: "{{ ansible_facts.services.sudo.state }}"
