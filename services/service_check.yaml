@@ -1,0 +1,38 @@
+---
+- name: Gather service Facts
+  hosts: localhost
+  gather_facts: false
+  become: true
+  # become_user: vscode
+  vars:
+    # Note: chrony cannot run in this container due to CAP_SYS_TIME restrictions
+    # Use apache2 as an example service instead
+    service_name: ["apache2"]
+  tasks:
+    - name: Gather service facts
+      ansible.builtin.service_facts:
+    - name: Display service state
+      ansible.builtin.debug:
+        msg: "Service facts: {{ ansible_facts.services }}"
+
+    - name: Gather the service status from the system
+      ansible.builtin.service:
+        name: "{{ item }}"
+        state: started
+        enabled: true
+      loop: "{{ service_name }}"
+      register: service_status
+      ignore_errors: true
+    - name: Display the service status
+      ansible.builtin.debug:
+        msg: "{{ service_status.results }}"
+      # loop: "{{ service_status.results }}"
+
+    # - name: Display service state (sudo) when running
+    #   ansible.builtin.debug:
+    #     msg: "Sudo is running on {{ ansible_facts['hostname'] }}"
+    #   when: ansible_facts.services.sudo.state == 'running'
+    # - name: Display service state (sudo) when stopped
+    #   ansible.builtin.debug:
+    #     msg: "Sudo is stopped on {{ ansible_facts['hostname'] }}"
+    #   when: ansible_facts.services.sudo.state != 'running'
