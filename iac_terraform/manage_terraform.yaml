@@ -1,0 +1,13 @@
+---
+- name: Terraform
+  hosts: localhost
+  gather_facts: false
+  become: false
+  vars:
+    terraform_state: "present"
+  tasks:
+    - name: Apply or destroy resources with terraform
+      community.general.terraform:
+        project_path: "{{ playbook_dir }}/terraform"
+        state: "{{ terraform_state }}"
+        force_init: true
