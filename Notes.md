@@ -1,33 +1,34 @@
-## In YAML, the > and | symbols (operators) are block scalar indicators used for writing multi-line strings, controlling how newlines are treated. 
+### In YAML, the > and | symbols (operators) are block scalar indicators used for writing multi-line strings, controlling how newlines are treated. 
 
 # The > Operator (Folded Style) 
 The > character indicates the folded style for multi-line strings. It treats newlines within the text as spaces, effectively joining the content into a single long line in the final output. 
 
-## Behavior: Newlines are converted to spaces. Blank lines (double newlines in the source) are preserved as single newlines in the output. 
-## Use Case: Ideal for long descriptions or paragraphs where the exact line breaks in the source file are not important for the final value. [1, 4, 7, 8, 9]  
+### Behavior: Newlines are converted to spaces. Blank lines (double newlines in the source) are preserved as single newlines in the output. 
+### Use Case: Ideal for long descriptions or paragraphs where the exact line breaks in the source file are not important for the final value.
 
-Example: 
+### Example: 
 description: >
   This is a very long description
   that spans multiple lines in the YAML file
   but will be a single line in the output.
 
-Resulting string: 
+### Resulting string: 
 "This is a very long description that spans multiple lines in the YAML file but will be a single line in the output.\n" 
 
 # The | Operator (Literal Style) 
 The | character indicates the literal style. It preserves all newlines and original formatting exactly as they appear in the YAML file. 
 
-## Behavior: Newlines are kept as literal newline characters () in the resulting string. 
-## Use Case: Useful for formatted text, code snippets, or anything where whitespace and line breaks are significant. [4, 14, 15, 16, 17]  
+### Behavior: Newlines are kept as literal newline characters () in the resulting string. 
+### Use Case: Useful for formatted text, code snippets, or anything where whitespace and line breaks are significant.
 
-Example: 
+### Example: 
 code: |
   line 1
   line 2
   line 3
 
-Resulting string: "line 1\nline 2\nline 3\n"
+### Resulting string: 
+"line 1\nline 2\nline 3\n"
 
 # YAML supports several other options for defining data: 
 
