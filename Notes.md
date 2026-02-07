@@ -30,15 +30,15 @@ code: |
 ### Resulting string: 
 "line 1\nline 2\nline 3\n"
 
-# YAML supports several other options for defining data: 
+## YAML supports several other options for defining data: 
 
-## Unquoted Strings: Most strings do not require quotes unless they contain special characters (like :, #, [], {}, etc.) or reserved words (true, false, yes, no). 
-## Single Quotes ('): Prevents most escape sequences from being processed, treating the content literally (except for ''  which becomes a single '). 
-## Double Quotes ("): Allows C-style escape sequences (e.g., \n for a newline) to be interpreted. 
-## Chomp Modifiers (-, +): These can be added to | or > to control how trailing newlines at the end of the block are handled: 
+### Unquoted Strings: Most strings do not require quotes unless they contain special characters (like :, #, [], {}, etc.) or reserved words (true, false, yes, no). 
+### Single Quotes ('): Prevents most escape sequences from being processed, treating the content literally (except for ''  which becomes a single '). 
+### Double Quotes ("): Allows C-style escape sequences (e.g., \n for a newline) to be interpreted. 
+### Chomp Modifiers (-, +): These can be added to | or > to control how trailing newlines at the end of the block are handled: 
 
-## |- or >- : Strips all trailing newlines. 
-## |+ or >+ : Keeps all trailing newlines. 
+### |- or >- : Strips all trailing newlines. 
+### |+ or >+ : Keeps all trailing newlines. 
 
 ### Lists (Sequences): Use a hyphen and a space (- ) for each item, or square brackets for inline flow style (e.g. [item1, item2] ). 
 ### Dictionaries (Mappings): Use key:value pairs, with indentation defining the hierarchy, or curly braces for inline flow style (e.g. {key1: value1, key2:value2}). 
