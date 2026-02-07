@@ -6,3 +6,13 @@
     - name: Show Python version
       ansible.builtin.debug:
         msg: "Python version is {{ ansible_facts['python_version'] }}"
+    - name: Show Python version 2
+      ansible.builtin.debug:
+        msg: >-
+          Python version is {{ ansible_facts['python']['version']['major'] }}.
+          {{ ansible_facts['python']['version']['minor'] }}.
+          {{ ansible_facts['python']['version']['micro'] }}
+    - name: Display Verbose Python version
+      ansible.builtin.debug:
+        var: ansible_facts['python']
+        verbosity: 1
