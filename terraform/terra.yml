@@ -1,0 +1,40 @@
+---
+- name: Install hashicorp terraform on debian
+  hosts: localhost
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Install required packages
+      ansible.builtin.apt:
+        name: gnupg
+        state: present
+
+    - name: Get distribution codename
+      ansible.builtin.shell: lsb_release -cs
+      register: distro_codename
+      changed_when: false
+
+    - name: Get system architecture
+      ansible.builtin.shell: dpkg --print-architecture
+      register: system_arch
+      changed_when: false
+
+    - name: Download and add Hashicorp GPG key
+      ansible.builtin.shell: |
+        curl -fsSL https://apt.releases.hashicorp.com/gpg | gpg --dearmor > /usr/share/keyrings/hashicorp-archive-keyring.gpg
+      changed_when: false
+
+    - name: Add hashicorp repository
+      ansible.builtin.apt_repository:
+        repo: "deb [arch={{ system_arch.stdout | trim }} signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com {{ distro_codename.stdout | trim }} main"
+        state: present
+        filename: hashicorp
+
+    - name: Update apt cache
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Install hashicorp terraform
+      ansible.builtin.package:
+        name: terraform
+        state: present
