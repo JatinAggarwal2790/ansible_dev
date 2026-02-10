@@ -1,0 +1,10 @@
+- name: Test my user_info module
+  hosts: localhost
+  tasks:
+  - name: Run the new module
+    user_info:
+      username: 'vscode'
+    register: user_info_output
+  - name: Dump test output
+    ansible.builtin.debug:
+      msg: '{{ user_info_output }}'

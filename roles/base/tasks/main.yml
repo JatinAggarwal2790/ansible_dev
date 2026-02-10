@@ -1,0 +1,9 @@
+---
+- name: Run the new module
+  my_test:
+    name: 'hello'
+    new: true
+  register: testout
+- name: Dump test output
+  ansible.builtin.debug:
+    msg: '{{ testout }}'

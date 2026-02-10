@@ -1,0 +1,32 @@
+---
+DOCUMENTATION:
+    module: user_info
+    short_description: Get information about a user
+    description:
+        - This module retrieves information about a specified user from the system.
+    options:
+      username:
+        description:
+            - The username to retrieve information for.
+        required: true
+        type: str
+
+EXAMPLES:
+    - name: Get information about the user 'vscode'
+      user_info:
+        username: 'vscode'
+
+RETURN:
+    user_info:
+      description: Information about the specified user.
+      returned: always
+      type: dict
+      sample: {
+        user_info: {
+            name: vscode,
+            uid: 1000,
+            gid: 1000,
+            home: /home/vscode,
+            shell: /bin/bash
+        }
+      }
