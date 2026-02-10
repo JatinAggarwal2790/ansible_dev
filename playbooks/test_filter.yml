@@ -1,0 +1,8 @@
+---
+- name: Test Custom Filter
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Test the Filter
+      ansible.builtin.debug:
+        msg: "{{ 'hello' | mac.test.upper_case }}"

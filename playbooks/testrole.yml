@@ -1,0 +1,4 @@
+- name: test my new module
+  hosts: localhost
+  roles:
+    - base

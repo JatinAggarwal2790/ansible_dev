@@ -1,11 +1,11 @@
-- name: test my new module
+- name: Test my new module
   hosts: localhost
   tasks:
-  - name: run the new module
-    my_test:
-      name: 'hello'
-      new: true
-    register: testout
-  - name: dump test output
-    debug:
-      msg: '{{ testout }}'
+    - name: Run the new module
+      my_test:
+        name: 'hello'
+        new: true
+      register: testout
+    - name: Dump test output
+      ansible.builtin.debug:
+        msg: '{{ testout }}'
