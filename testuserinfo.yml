@@ -1,13 +1,27 @@
 - name: Test my user_info module
   hosts: all
-  gather_facts: true
-  gather_subset:
-    - '!all'
-    - 'os_family'
+  gather_facts: false
   vars:
     debian: 'vscode'
     redhat: 'devuser'
   tasks:
+    - name: Dump Setup user
+      ansible.builtin.setup:
+        gather_subset:
+          - '!all'
+          - '!min'
+          - 'os_family'
+          - 'user'
+      register: setup_output
+    - name: Dump Limited Setup output
+      ansible.builtin.debug:
+        msg: '{{ setup_output }}'
+    - name: Dump login user from Setup output
+      ansible.builtin.debug:
+        msg: '{{ setup_output.ansible_facts.ansible_user_id }}'
+    - name: Dump login user using the ansible_fact dictionary
+      ansible.builtin.debug:
+        msg: '{{ ansible_facts["user_id"] }}'
     - name: Dump gathered facts
       ansible.builtin.debug:
         msg: '{{ ansible_facts["os_family"] }}'

@@ -8,9 +8,14 @@
   ansible.builtin.debug:
     msg: '{{ testout }}'
 
+- name: Get the login user
+  ansible.builtin.debug:
+    msg: '{{ ansible_env["USER"] }}'
+  register: login_user
+
 - name: Run the User info module
   user_info:
-    username: 'vscode'
+    username: '{{ login_user.msg }}'
   register: user_info_output
 - name: Dump User output
   ansible.builtin.debug:
