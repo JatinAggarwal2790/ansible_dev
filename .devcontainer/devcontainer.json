@@ -4,11 +4,9 @@
 	"name": "ansible-tuts",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	// "image": "mcr.microsoft.com/devcontainers/python:2-3.14-trixie"
-	"build":{
-		"dockerfile": "DockerFile",
-		// Update the 'context' if your Dockerfile is not in the .devcontainer folder
-		"context": ".."
-	},
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "ansible-dev",
+	"workspaceFolder": "/workspace/Ansible",
 	"customizations": {
 		"vscode": {
 			"extensions": [

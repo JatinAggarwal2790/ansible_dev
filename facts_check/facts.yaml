@@ -1,6 +1,6 @@
 ---
 - name: Display Python Version
-  hosts: localhost
+  hosts: all
   gather_facts: true
   tasks:
     - name: Show Python version

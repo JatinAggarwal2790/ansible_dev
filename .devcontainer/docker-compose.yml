@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  ansible-dev:
+    build:
+      context: ..
+      dockerfile: .devcontainer/DockerFile
+    image: ansible-dev:latest
+    container_name: ansible-devcontainer
+    volumes:
+      - ..:/workspace/Ansible
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: /workspace/Ansible
+    command: /bin/bash -c "while sleep 1000; do :; done"
+    networks:
+      - ubi_devcontainer_my_ssh_network
+
+networks:
+  ubi_devcontainer_my_ssh_network:
+    driver: bridge
+    external: true

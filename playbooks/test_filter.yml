@@ -1,6 +1,6 @@
 ---
 - name: Test Custom Filter
-  hosts: localhost
+  hosts: remote
   gather_facts: false
   tasks:
     - name: Test the Filter

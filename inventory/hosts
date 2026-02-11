@@ -1,0 +1,11 @@
+[test]
+localhost ansible_connection=local
+
+[remote]
+172.18.0.3
+172.18.0.4
+
+[remote:vars]
+ansible_user=devuser
+ansible_ssh_pass=dev@123
+ansible_python_interpreter=/usr/bin/python3
