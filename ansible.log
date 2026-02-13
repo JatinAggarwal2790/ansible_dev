@@ -1,0 +1,137 @@
+Playbook 'testuserinfo.yml' starting...
+Task 'Dump Setup user' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on localhost
+Task 'Dump login user from Setup output' succeeded on localhost
+Task 'Dump login user using the ansible_fact dictionary' succeeded on localhost
+Task 'Dump gathered facts' succeeded on localhost
+Task 'Run the User module (Debian)' succeeded on localhost
+Task 'Dump test output' succeeded on localhost
+Playbook run completed.
+Playbook 'testuserinfo.yml' starting...
+Task 'Dump Setup user' succeeded on localhost
+Task 'Dump Setup user' succeeded on 172.18.0.3
+Task 'Dump Limited Setup output' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on 172.18.0.3
+Task 'Dump login user from Setup output' succeeded on localhost
+Task 'Dump login user from Setup output' succeeded on 172.18.0.3
+Task 'Dump login user using the ansible_fact dictionary' succeeded on localhost
+Task 'Dump login user using the ansible_fact dictionary' succeeded on 172.18.0.3
+Task 'Dump gathered facts' succeeded on localhost
+Task 'Dump gathered facts' succeeded on 172.18.0.3
+Task 'Run the User module (Debian)' succeeded on localhost
+Task 'Dump test output' succeeded on localhost
+Task 'Run the User module (RedHat)' succeeded on 172.18.0.3
+Task 'Dump test output' succeeded on 172.18.0.3
+Playbook run completed.
+Playbook 'testuserinfo.yml' starting...
+Task 'Dump Setup user' succeeded on localhost
+Task 'Dump Setup user' succeeded on 172.18.0.3
+Task 'Dump Limited Setup output' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on 172.18.0.3
+Task 'Dump login user from Setup output' succeeded on localhost
+Task 'Dump login user from Setup output' succeeded on 172.18.0.3
+Task 'Dump login user using the ansible_fact dictionary' succeeded on localhost
+Task 'Dump login user using the ansible_fact dictionary' succeeded on 172.18.0.3
+Task 'Dump gathered facts' succeeded on localhost
+Task 'Dump gathered facts' succeeded on 172.18.0.3
+Task 'Run the User module (Debian)' succeeded on localhost
+Task 'Dump test output' succeeded on localhost
+Task 'Run the User module (RedHat)' succeeded on 172.18.0.3
+Task 'Dump test output' succeeded on 172.18.0.3
+Playbook run completed.
+Playbook 'testuserinfo.yml' starting...
+Task 'Dump Setup user' succeeded on localhost
+Task 'Dump Setup user' succeeded on 172.18.0.3
+Task 'Dump Limited Setup output' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on 172.18.0.3
+Task 'Dump login user from Setup output' succeeded on localhost
+Task 'Dump login user from Setup output' succeeded on 172.18.0.3
+Task 'Dump login user using the ansible_fact dictionary' succeeded on localhost
+Task 'Dump login user using the ansible_fact dictionary' succeeded on 172.18.0.3
+Task 'Dump gathered facts' succeeded on localhost
+Task 'Dump gathered facts' succeeded on 172.18.0.3
+Task 'Run the User module (Debian)' succeeded on localhost
+Task 'Dump test output' succeeded on localhost
+Task 'Run the User module (RedHat)' succeeded on 172.18.0.3
+Task 'Dump test output' succeeded on 172.18.0.3
+Playbook run completed.
+Playbook 'testuserinfo.yml' starting...
+Task 'Dump Setup user' succeeded on 172.18.0.3
+Task 'Dump Setup user' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on 172.18.0.3
+Task 'Dump login user from Setup output' succeeded on localhost
+Task 'Dump login user from Setup output' succeeded on 172.18.0.3
+Task 'Dump login user using the ansible_fact dictionary' succeeded on localhost
+Task 'Dump login user using the ansible_fact dictionary' succeeded on 172.18.0.3
+Task 'Dump gathered facts' succeeded on localhost
+Task 'Dump gathered facts' succeeded on 172.18.0.3
+Task 'Run the User module (Debian)' succeeded on localhost
+Task 'Dump test output' succeeded on localhost
+Task 'Run the User module (RedHat)' succeeded on 172.18.0.3
+Task 'Dump test output' succeeded on 172.18.0.3
+Playbook run completed.
+Playbook 'testuserinfo.yml' starting...
+Task 'Dump Setup user' succeeded on localhost
+Task 'Dump Setup user' succeeded on 172.18.0.3
+Task 'Dump Limited Setup output' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on 172.18.0.3
+Task 'Dump login user from Setup output' succeeded on localhost
+Task 'Dump login user from Setup output' succeeded on 172.18.0.3
+Task 'Dump login user using the ansible_fact dictionary' succeeded on localhost
+Task 'Dump login user using the ansible_fact dictionary' succeeded on 172.18.0.3
+Task 'Dump gathered facts' succeeded on localhost
+Task 'Dump gathered facts' succeeded on 172.18.0.3
+Task 'Run the User module (Debian)' succeeded on localhost
+Task 'Dump test output' succeeded on localhost
+Task 'Run the User module (RedHat)' succeeded on 172.18.0.3
+Task 'Dump test output' succeeded on 172.18.0.3
+Playbook run completed.
+Playbook 'testuserinfo.yml' starting...
+Task 'Dump Setup user' succeeded on localhost
+Task 'Dump Setup user' succeeded on 172.18.0.3
+Task 'Dump Limited Setup output' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on 172.18.0.3
+Task 'Dump login user from Setup output' succeeded on localhost
+Task 'Dump login user from Setup output' succeeded on 172.18.0.3
+Task 'Dump login user using the ansible_fact dictionary' succeeded on localhost
+Task 'Dump login user using the ansible_fact dictionary' succeeded on 172.18.0.3
+Task 'Dump gathered facts' succeeded on localhost
+Task 'Dump gathered facts' succeeded on 172.18.0.3
+Task 'Run the User module (Debian)' succeeded on localhost
+Task 'Dump test output' succeeded on localhost
+Task 'Run the User module (RedHat)' succeeded on 172.18.0.3
+Task 'Dump test output' succeeded on 172.18.0.3
+Playbook run completed.
+Playbook 'testuserinfo.yml' starting...
+Task 'Dump Setup user' succeeded on localhost
+Task 'Dump Setup user' succeeded on 172.18.0.3
+Task 'Dump Limited Setup output' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on 172.18.0.3
+Task 'Dump login user from Setup output' succeeded on localhost
+Task 'Dump login user from Setup output' succeeded on 172.18.0.3
+Task 'Dump login user using the ansible_fact dictionary' succeeded on localhost
+Task 'Dump login user using the ansible_fact dictionary' succeeded on 172.18.0.3
+Task 'Dump gathered facts' succeeded on localhost
+Task 'Dump gathered facts' succeeded on 172.18.0.3
+Task 'Run the User module (Debian)' succeeded on localhost
+Task 'Dump test output' succeeded on localhost
+Task 'Run the User module (RedHat)' succeeded on 172.18.0.3
+Task 'Dump test output' succeeded on 172.18.0.3
+Playbook run completed.
+Playbook 'testuserinfo.yml' starting...
+Task 'Dump Setup user' succeeded on 172.18.0.3
+Task 'Dump Setup user' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on localhost
+Task 'Dump Limited Setup output' succeeded on 172.18.0.3
+Task 'Dump login user from Setup output' succeeded on localhost
+Task 'Dump login user from Setup output' succeeded on 172.18.0.3
+Task 'Dump login user using the ansible_fact dictionary' succeeded on localhost
+Task 'Dump login user using the ansible_fact dictionary' succeeded on 172.18.0.3
+Task 'Dump gathered facts' succeeded on localhost
+Task 'Dump gathered facts' succeeded on 172.18.0.3
+Task 'Run the User module (Debian)' succeeded on localhost
+Task 'Dump test output' succeeded on localhost
+Task 'Run the User module (RedHat)' succeeded on 172.18.0.3
+Task 'Dump test output' succeeded on 172.18.0.3
+Playbook run completed.

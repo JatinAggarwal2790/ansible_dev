@@ -1,0 +1,59 @@
+ansible-galaxy collection install community.general
+Starting galaxy collection install process
+Process install dependency map
+Starting collection install process
+Downloading https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/community-general-12.3.0.tar.gz to /home/vscode/.ansible/tmp/ansible-local-8650am5g2cax/tmpmz4o6ui1/community-general-12.3.0-4jpc76r7
+Installing 'community.general:12.3.0' to '/workspace/Ansible/collections/ansible_collections/community/general'
+community.general:12.3.0 was installed successfully
+
+
+vscode ➜ /workspace/Ansible (main) $ ansible-galaxy collection install ansible.posix
+Starting galaxy collection install process
+Process install dependency map
+Starting collection install process
+Downloading https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/ansible-posix-2.1.0.tar.gz to /home/vscode/.ansible/tmp/ansible-local-13555bmnop_fm/tmpod7mr998/ansible-posix-2.1.0-r1_ogetm
+Installing 'ansible.posix:2.1.0' to '/workspace/Ansible/collections/ansible_collections/ansible/posix'
+ansible.posix:2.1.0 was installed successfully
+
+
+
+ansible.builtin.default                default Ansible screen output                               
+ansible.builtin.junit                  write playbook output to a JUnit file                       
+ansible.builtin.minimal                minimal Ansible screen output                               
+ansible.builtin.oneline                oneline Ansible screen output                               
+ansible.builtin.tree                   Save host events to files                                   
+ansible.posix.cgroup_perf_recap        Profiles system activity of tasks and full execution using c...
+ansible.posix.debug                    formatted stdout/stderr display                             
+ansible.posix.json                     Ansible screen output as JSON                               
+ansible.posix.jsonl                    Ansible screen output as JSONL (lines in json format)       
+ansible.posix.profile_roles            adds timing information to roles                            
+ansible.posix.profile_tasks            adds time information to tasks                              
+ansible.posix.timer                    Adds time to play stats                                     
+community.general.cgroup_memory_recap  Profiles maximum memory usage of tasks and full execution us...
+community.general.context_demo         Demo callback that adds play/task context                   
+community.general.counter_enabled      Adds counters to the output items (tasks and hosts/task)    
+community.general.default_without_diff The default ansible callback without diff output            
+community.general.dense                Minimal stdout output                                       
+community.general.diy                  Customize the output                                        
+community.general.elastic              Create distributed traces for each Ansible task in Elastic A...
+community.general.elastic              Create distributed traces for each Ansible task in Elastic A...
+community.general.jabber               Post task events to a Jabber server                         
+community.general.log_plays            Write playbook output to log file                           
+community.general.loganalytics         Posts task results to Azure Log Analytics                   
+community.general.logdna               Sends playbook logs to LogDNA                               
+community.general.logentries           Sends events to Logentries                                  
+community.general.logstash             Sends events to Logstash                                    
+community.general.mail                 Sends failure events through email                          
+community.general.nrdp                 Post task results to a Nagios server through nrdp           
+community.general.null                 Do not display stuff to screen                              
+community.general.opentelemetry        Create distributed traces with OpenTelemetry                
+community.general.print_task           Prints playbook task snippet to job output                  
+community.general.say                  Notify using software speech synthesizer                    
+community.general.selective            Only print certain tasks                                    
+community.general.slack                Sends play events to a Slack channel                        
+community.general.splunk               Sends task result events to Splunk HTTP Event Collector     
+community.general.sumologic            Sends task result events to Sumologic                       
+community.general.syslog_json          Sends JSON events to syslog                                 
+community.general.tasks_only           Only show tasks                                             
+community.general.timestamp            Adds simple timestamp for each header                       
+community.general.unixy                Condensed Ansible output 
